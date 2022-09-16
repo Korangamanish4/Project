@@ -1,0 +1,150 @@
+/* Common.css */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    margin-top: 40px;
+    background-color: bisque;
+}
+
+.cards {
+    width: 30%;
+    border: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 10px black;
+    display: inline-block;
+    background-color: white;
+}
+
+.cards :hover {
+    cursor: pointer;
+}
+
+.userName {
+    text-align: center;
+    color: orangered;
+}
+
+.email {
+    margin-top: 15px;
+    flex-direction: row;
+}
+
+.email p1 {
+    font-weight: 700;
+}
+
+.email p2 {
+    margin-left: 5px;
+}
+
+.company {
+    margin-top: 1px;
+}
+
+.company p1 {
+    font-weight: 700;
+}
+
+.company p2 {
+    margin-left: 5px;
+}
+
+.phone {
+    margin-top: 1px;
+}
+
+.phone p1 {
+    font-weight: 700;
+}
+
+.phone p2 {
+    margin-left: 5px;
+}
+
+.website {
+    margin-top: 1px;
+}
+
+.website p1 {
+    font-weight: 700;
+}
+
+.website p2 {
+    margin-left: 5px;
+}
+
+.address {
+    margin-top: 1px;
+}
+
+.address p1 {
+    font-weight: 700;
+}
+
+.address p2 {
+    margin-left: 5px;
+}
+
+.image img {
+    height: 277px;
+    width: 277px;
+    align-self: center;
+}
+
+.albumCards {
+    width: 46%;
+    border: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    box-shadow: 2px 2px 10px black;
+    background-color: white;
+    padding-top: 20px;
+}
+
+.albumCards :hover {
+    cursor: pointer;
+}
+
+.albumId {
+    text-align: center;
+    color: orangered;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.albumTitle {
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.albumDetailsCards {
+    width: 22%;
+    border: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    display: inline-block;
+    box-shadow: 2px 2px 10px black;
+    background-color: white;
+    padding-top: 20px;
+}
+
+.albumDetailsTitle {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
