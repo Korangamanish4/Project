@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { useNavigate, useParams } from "react-router-dom";
 import Header from '../component/Header';
+import { userContext } from '../store/context';
 import './Common.css';
 
 const Album = () => {
@@ -9,11 +10,15 @@ const Album = () => {
     const [showData, setShowData] = useState(false)
     const navigate = useNavigate()
     const { userId } = useParams()
+    const setIsLoading = useContext(userContext)
     const userAPI = `https://jsonplaceholder.typicode.com/albums?userId=${userId}`
 
     useEffect(() => {
-        getData(userAPI)
-    }, [])
+        setIsLoading(true)
+        setTimeout(() => {
+            getData(userAPI)
+        },[3000])
+    })
 
     const getData = async (url) => {
         try {
@@ -22,7 +27,9 @@ const Album = () => {
             console.log("VALUE ", value)
             setProducts(value)
             setShowData(true)
+            setIsLoading(false)
         } catch (error) {
+            setIsLoading(false)
             console.log("ERROR ", error)
         }
     }

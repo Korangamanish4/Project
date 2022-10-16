@@ -12,21 +12,24 @@ body {
 .main {
     margin-top: 40px;
     background-color: bisque;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap : 1.5rem;
+    padding: 20px;
 }
 
 .cards {
-    width: 30%;
     border: 10px;
     border-radius: 5px;
-    margin: 10px;
     padding: 10px;
     box-shadow: 2px 2px 10px black;
-    display: inline-block;
     background-color: white;
 }
 
-.cards :hover {
+.cards:hover {
     cursor: pointer;
+    background: transparent;
+    background-color: beige;
 }
 
 .userName {
@@ -96,25 +99,24 @@ body {
 }
 
 .image img {
-    height: 277px;
-    width: 277px;
+    height: 100%;
+    width: 100%;
     align-self: center;
 }
 
 .albumCards {
-    width: 46%;
     border: 10px;
     border-radius: 5px;
-    margin: 10px;
     padding: 10px;
-    display: inline-block;
     box-shadow: 2px 2px 10px black;
     background-color: white;
     padding-top: 20px;
 }
 
-.albumCards :hover {
+.albumCards:hover {
     cursor: pointer;
+    background: transparent;
+    background-color: beige;
 }
 
 .albumId {
@@ -131,12 +133,9 @@ body {
 }
 
 .albumDetailsCards {
-    width: 22%;
     border: 10px;
     border-radius: 5px;
-    margin: 5px;
     padding: 10px;
-    display: inline-block;
     box-shadow: 2px 2px 10px black;
     background-color: white;
     padding-top: 20px;
@@ -147,4 +146,16 @@ body {
     font-size: 14px;
     font-weight: bolder;
     margin-top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
 }

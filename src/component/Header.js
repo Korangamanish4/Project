@@ -9,13 +9,9 @@ const Header = () => {
 
     return (
         <div className='mainHeader'>
-            <div className='headerImage'>
-                <img src={logo} onClick={() => navigate('/')} />
-            </div>
-            <h2 className='headerTitle'>Click on Icon to navigate to Home Page</h2>
-            <div className='headerButton'>
+                <img alt='' src={logo} onClick={() => navigate('/')} />
+                <h2 >Click Icon for Home</h2>
                 <button onClick={() => alert("Button to Perform any Action")}>User</button>
-            </div>
         </div>
     )
 }
