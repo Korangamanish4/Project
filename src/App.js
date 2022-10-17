@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Spinner from "./component/Loader/Loader";
+//import Spinner from "./component/Loader/Loader";
 import Routing from "./Router";
 import { userContext } from "./store/context";
 
@@ -8,7 +8,7 @@ function App() {
 
   return (
     <userContext.Provider value={setIsLoading}>
-      {/* {isLoading && <Spinner />} */}
+      {isLoading}
       <Routing />
     </userContext.Provider>
   );
