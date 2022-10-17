@@ -8,7 +8,7 @@ function App() {
 
   return (
     <userContext.Provider value={setIsLoading}>
-      {isLoading && <Spinner />}
+      {/* {isLoading && <Spinner />} */}
       <Routing />
     </userContext.Provider>
   );
