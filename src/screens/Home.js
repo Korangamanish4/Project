@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Header from '../component/Header';
 import './Common.css';
 
-const userAPI = " https://jsonplaceholder.typicode.com/users "
+const userAPI = " https://jsonplaceholder.typicode.com/users"
 
 const Home = () => {
     const [products, setProducts] = useState([]);

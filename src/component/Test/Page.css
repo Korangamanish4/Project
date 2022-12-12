@@ -1,0 +1,50 @@
+.containerPage1 {
+  height: max-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section1Page1 {
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.section1Page1 h4 {
+  margin-bottom: 10px;
+}
+
+.containerPage1 span {
+  color: #4a051e;
+}
+
+.section2Page1 {
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  overflow: auto;
+  cursor: grab;
+  user-select: none;
+}
+
+.cardsContainer::-webkit-scrollbar { 
+  display: none;
+}
+
+
+.cardsPage1 {
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  background-color: aqua;
+}

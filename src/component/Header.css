@@ -19,6 +19,13 @@ body {
     align-items: center;
 }
 
+.links {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 6% 86% 8%;
+    gap: 2rem;
+}
+
 .mainHeader img {
     height: 70px;
     width: 70px;
